@@ -10,7 +10,7 @@
         <h1 id="paragraphtitle">Featured Game: {{ featuredgame }}</h1>
         <p id="boxtext">{{ description }}</p>
         <div id="picture">
-          <img id="pictureimg" src="assets/legoscrabble.png">
+          <img id="pictureimg" :src="img">
         </div>
         <form action="legoscrabble.html">
           <button id="button1">Check It Out</button>
@@ -26,7 +26,8 @@ export default {
   data() {
     return {
       featuredgame: "Lego Scrabble",
-      description: "A Lego version of the popular game Scrabble."
+      description: "A Lego version of the popular game Scrabble.",
+      img: "assets\legoscrabble.png"
     };
   },
 
@@ -36,6 +37,9 @@ export default {
     },
     featureddescription: function(sitedescription) {
       this.description = sitedescription;
+    },
+    featuredimage: function(image) {
+      this.img = image;
     }
   }
 };
