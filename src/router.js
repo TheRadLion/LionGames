@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Article from './views/Article.vue'
+import Legoscrabble from './views/Legoscrabble.vue'
+// import Tictactoe from './views/Tictactoe.vue'
+import Chess from './views/Chess.vue'
 
 Vue.use(Router)
 
@@ -10,6 +14,26 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/article',
+      name: 'article',
+      component: Article
+    },
+    {
+      path: '/legoscrabble',
+      name: 'legoscrabble',
+      component: Legoscrabble
+    },
+    // {
+    //   path: '/tictactoe',
+    //   name: 'tictactoe',
+    //   component: Tictactoe
+    // },
+    {
+      path: '/chess',
+      name: 'chess',
+      component: Chess
     },
     {
       path: '/about',
