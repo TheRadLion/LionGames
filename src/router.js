@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Article from './views/Article.vue'
 import Legoscrabble from './views/Legoscrabble.vue'
-// import Tictactoe from './views/Tictactoe.vue'
+import Tictactoe from './views/Tictactoe.vue'
 import Chess from './views/Chess.vue'
 
 Vue.use(Router)
