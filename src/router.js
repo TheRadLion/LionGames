@@ -25,11 +25,11 @@ export default new Router({
       name: 'legoscrabble',
       component: Legoscrabble
     },
-    // {
-    //   path: '/tictactoe',
-    //   name: 'tictactoe',
-    //   component: Tictactoe
-    // },
+    {
+      path: '/tictactoe',
+      name: 'tictactoe',
+      component: Tictactoe
+    },
     {
       path: '/chess',
       name: 'chess',
